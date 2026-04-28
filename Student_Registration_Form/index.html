@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <hr />
+
+    <form>
+        <!--1. Personal Information-->
+    <h2>1. Personal Information</h2>
+        
+        <label for="fname" >Full Name: </label>
+        <input type="text" required id="fname" placeholder="Enter your Full Name"> <br /><br />
+
+        <label for="mail">Email: </label>
+        <input type="email" required id="mail" placeholder="Enter Your Email Id"> <br /><br />
+ 
+        <label for="phone">Phone No: </label>
+        <input type="tel" required  id="phone" placeholder="Enter Your Phone Number"> <br /> <br />
+
+         <label for="dateofbirth">Date of birth </label>
+        <input type="date" required  id="dateofbirth"> <br /> <br />
+
+        <label >Gender:  </label>
+       
+        <input type="radio" required  id="male" name ="gender"> 
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name ="gender">
+        <label for="female">Female</label>
+<hr />
+
+    <!--2. Academic Details-->
+
+    <h2>2. Academic Details</h2>
+    <label for="_course">Course:</label>
+    <select id="_course">
+        <option selected  >B.Tech</option>
+        <option>BCA</option>
+        <option>B.Pharma</option>
+    </select><br /><br />
+
+    <label for="_branch">Branch: </label>
+    <select id="_branch">
+        <option>CSE</option>
+        <option>IT</option>
+        <option>ECE</option>    
+    </select><br /><br />
+
+    <label for="_collegename">College Name: </label>
+    <input type="text" id="_collegename" placeholder="Enter your college name">
+    <br /> <br />
+
+    <label for="_year">Year: </label>
+    <select>
+    <option>1st Year</option>
+    <option>2nd Year</option>
+    <option>3rd year</option>
+    <option>4th year</option>
+    </select>
+<br /> <br />
+<hr />
+
+<!--3. Marks/Score-->
+
+<h2>3. Marks / Scores</h2>
+
+<label for="tenthper">10th Percentage: </label>
+<input type="number"  required id="tenthper" step="0.01" placeholder="Enter your 10th percentage">
+
+<br /><br />
+
+<label for="twelveper">12th Percentage: </label>
+<input type="number" required id="twelveper" step="0.01" placeholder="Enter your 12th percentage">
+
+<br /><br />
+
+<label for="_cgpa">CGPA: </label>
+<input type="number" required  id="_cgpa" step="0.01" placeholder="Enter your current CGPA">
+
+<br /><br />
+<hr />
+
+<!--4.Skills Section-->
+<h2>4. Skills Section</h2>
+
+<label >Programming Languages: </label> <br />
+<input type="checkbox" name="prolang" id="cpp">C++ <br/>
+<input type="checkbox" name="prolang" id="python">Python <br />
+<input type="checkbox"  name="prolang" id="javascript">JavaScript<br />
+<input type="checkbox" name="prolang" id="java">Java
+<br /> <br />
+
+<label >Preferred Role: </label> <br />
+<input type="radio" name="_role" id="frontend">Frontend <br />
+<input type="radio" name="_role" id="backend">Backend <br />
+<input type="radio" name="_role" id="fullstack">Full Stack <br />
+<input type="radio" name="_role" id="aiml">AI/ML <br />
+
+<br /><hr />
+
+<!--5. File Upliad-->
+<h2>5. File Upload</h2>
+
+<label for="resume"> Resume Upload: </label>
+<input type="file" id="resume" accept=".pdf,.doc,.docx" ><br /><br />
+
+<label for="profile"> Profile Photo upload: </label>
+<input type="file" id="profile" accept="image/*">
+
+<br /><hr />
+
+<!--6. Additional Info-->
+<h2>6. Additional Information</h2>
+
+<label>Short bio / About You:</label><br>
+<textarea rows="3" cols="100" ></textarea>
+<br /><br />
+
+<label>Project Description: </label><br>
+<textarea rows="3" cols="100" ></textarea>
+<br /><br /><hr />
+
+<!--7. Address Section-->
+<h2>7. Address Section</h2>
+
+<label>Address line: </label>
+<input type="text" id="addressline"><br /><br />
+
+<label>City: </label>
+<input type="text" id="city"><br /><br />
+
+<label>State: </label>
+<input type="text" id="State"><br /><br />
+
+<label>Pincode: </label>
+<input type="number" id="pincode"><br /><br />
+
+<hr />
+
+<!--8.Preferences-->
+
+<h2>8. Preferences</h2>
+
+<label>Willing to relocate?</label><br />
+<input type="radio" name="_relocate" id="_yes"> 
+<label for="_yes">Yes</label>
+<input type="radio" name="_relocate" id="_no">
+<label for="_no">No</label>
+<br /><br />
+
+<label>Available for internship?</label><br />
+<input type="checkbox" name="avintern"> Yes
+<input type="checkbox" name="avintern"> No
+
+<hr />
+
+<!--9. Declaration-->
+
+<h2>9. Declaration</h2>
+<label>I confirm all details are correct</label>
+<input type="checkbox" required>
+
+<br /> <br /><hr />
+
+<!--Buttons-->
+<h2>Submit Form</h2>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+</body>
+</html>
